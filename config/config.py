@@ -12,7 +12,7 @@ class Config(object):
     __mongodb_password = None
 
     def __init__(self):
-        self.config = load("config.toml")
+        self.config = load("config_dev.toml")
         Config.__mongodb_host = self.config["mongodb"]["url"]
         Config.__mongodb_port = self.config["mongodb"]["Port"]
         Config.__mongodb_db = self.config["mongodb"]["database"]
